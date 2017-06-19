@@ -1,0 +1,15 @@
+inherit python2-distutils
+
+NAME="python-faulthandler"
+VERSION=2.6
+RELEASE=1
+CATEGORY="Python"
+SUMMARY="Backport of Py3 faulthandler for Python 2"
+DESCRIPTION="Fault handler for SIGSEGV, SIGFPE, SIGABRT, SIGBUS and SIGILL
+signals; display the Python traceback and restore the previous handler.
+Allocate an alternate stack for this handler, if sigaltstack() is available,
+to be able to allocate memory on the stack, even on stack overflow."
+
+PKG_NAMES="python2-faulthandler"
+python2_faulthandler_OBSOLETES=${NAME}
+python2_faulthandler_CONTENTS="*"
