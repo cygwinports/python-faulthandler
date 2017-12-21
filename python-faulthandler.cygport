@@ -1,4 +1,4 @@
-inherit python2-distutils
+inherit python2-wheel
 
 NAME="python-faulthandler"
 VERSION=2.6
@@ -9,7 +9,3 @@ DESCRIPTION="Fault handler for SIGSEGV, SIGFPE, SIGABRT, SIGBUS and SIGILL
 signals; display the Python traceback and restore the previous handler.
 Allocate an alternate stack for this handler, if sigaltstack() is available,
 to be able to allocate memory on the stack, even on stack overflow."
-
-PKG_NAMES="python2-faulthandler"
-python2_faulthandler_OBSOLETES=${NAME}
-python2_faulthandler_CONTENTS="*"
